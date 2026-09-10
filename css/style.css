@@ -5,6 +5,8 @@
   --cream: #fdf6ec;
   --accent: #c98a4b;
   --text: #2b1f16;
+  --sage: #64796f;
+  --sage-dark: #4d5f56;
   --max-width: 1100px;
 }
 
@@ -43,18 +45,19 @@ ul {
 
 .btn {
   display: inline-block;
-  background: var(--accent);
-  color: #fff;
+  background: var(--cream);
+  color: var(--sage-dark);
   padding: 0.75rem 1.75rem;
   border: none;
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background: var(--coffee);
+  background: var(--sage-dark);
+  color: var(--cream);
   transform: translateY(-2px);
 }
 
@@ -66,7 +69,7 @@ section h2 {
 
 /* ---------- Header ---------- */
 .site-header {
-  background: var(--coffee-dark);
+  background: var(--sage);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -112,7 +115,7 @@ section h2 {
 
 /* ---------- Hero ---------- */
 .hero {
-  background: var(--coffee-dark);
+  background: var(--sage);
   color: #fff;
   text-align: center;
   padding: 2.5rem 1.5rem;
@@ -194,7 +197,7 @@ section h2 {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--coffee-dark);
+  background: var(--sage);
   color: var(--cream);
   text-align: center;
   padding: 1.5rem;
@@ -207,7 +210,7 @@ section h2 {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--coffee-dark);
+    background: var(--sage-dark);
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
