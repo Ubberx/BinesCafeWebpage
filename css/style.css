@@ -133,30 +133,6 @@ section h2 {
   color: var(--cream);
 }
 
-/* ---------- Opening Announcement ---------- */
-.opening {
-  background: var(--cream);
-  border-top: 3px solid var(--sage);
-  border-bottom: 3px solid var(--sage);
-  padding: 2.5rem 1.5rem;
-  text-align: center;
-}
-
-.opening h2 {
-  color: var(--sage-dark);
-  margin-bottom: 1rem;
-}
-
-.opening p {
-  font-size: 1.15rem;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.opening strong {
-  color: var(--sage-dark);
-}
-
 /* ---------- About ---------- */
 .about {
   padding: 4rem 1.5rem;
@@ -192,7 +168,7 @@ section h2 {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -284,5 +260,9 @@ section h2 {
 
   .about-image {
     aspect-ratio: 16 / 9;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 }
