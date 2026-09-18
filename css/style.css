@@ -140,7 +140,7 @@ section h2 {
 
 .about-text {
   max-width: 700px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -153,7 +153,7 @@ section h2 {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 2.5rem;
 }
 
 .about-image {
@@ -174,8 +174,15 @@ section h2 {
   margin: 0 auto;
 }
 
-.contact-info p {
-  margin-bottom: 1rem;
+.contact-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+}
+
+.contact-details dt {
+  font-weight: bold;
 }
 
 .contact-info h3 {
@@ -198,12 +205,64 @@ section h2 {
   color: #5c4a3a;
 }
 
+/* ---------- Legal (Impressum) ---------- */
+.legal {
+  padding: 4rem 1.5rem;
+}
+
+.legal-content {
+  max-width: 800px;
+}
+
+.legal-content h1 {
+  margin-bottom: 1.5rem;
+}
+
+.legal-content h2 {
+  font-size: 1.25rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.legal-content p,
+.legal-content .legal-list {
+  margin-bottom: 0.75rem;
+}
+
+.legal-content .legal-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.legal-content a:not(.back-link) {
+  color: var(--sage-dark);
+  text-decoration: underline;
+}
+
+.legal-content .back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--sage-dark);
+  font-weight: 500;
+}
+
+.legal-content .back-link:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--sage);
   color: var(--cream);
   text-align: center;
   padding: 1.5rem;
+}
+
+.site-footer a {
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: #fff;
 }
 
 /* ---------- Responsive ---------- */
