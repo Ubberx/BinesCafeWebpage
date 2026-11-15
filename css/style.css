@@ -8,6 +8,7 @@
   --sage: #64796f;
   --sage-dark: #4d5f56;
   --max-width: 1100px;
+  --max-width-wide: 1300px;
 }
 
 * {
@@ -41,6 +42,17 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+.container--wide {
+  max-width: var(--max-width-wide);
+}
+
+.section-intro {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .btn {
@@ -161,6 +173,63 @@ section h2 {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.about-images--single {
+  grid-template-columns: 1fr;
+  max-width: 500px;
+}
+
+/* ---------- Gallery ---------- */
+.gallery {
+  background: #fff;
+  padding: 4rem 1.5rem;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ---------- Essen & Trinken (Menu) ---------- */
+.menu {
+  padding: 4rem 1.5rem;
+}
+
+.menu-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-image-link {
+  display: block;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.menu-image-link:hover {
+  transform: translateY(-4px);
+}
+
+.menu-image {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------- Contact ---------- */
@@ -292,6 +361,14 @@ section h2 {
   }
 
   .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-images {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-images {
     grid-template-columns: 1fr;
   }
 }
